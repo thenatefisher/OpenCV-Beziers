@@ -1,0 +1,2 @@
+/usr/bin/ar cr libbezier.a  CMakeFiles/bezier.dir/bezier.cpp.o
+/usr/bin/ranlib libbezier.a

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fallingmeat/projects/bezier/class/bezier.cpp
+iostream
+-
+stdio.h
+-
+bezier.h
+/home/fallingmeat/projects/bezier/class/bezier.h
+
+/home/fallingmeat/projects/bezier/class/bezier.h
+math.h
+-
+iostream
+-
+stdio.h
+-
+
