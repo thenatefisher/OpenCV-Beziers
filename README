@@ -1,0 +1,17 @@
+OPENCV BEZIERS
+	This is a small library for assisting in the visualization of Bezier Splines in OpenCV. Included in this package is also a demo 	application that will read an input file for coordinates of control points and plot these points along with the cubic Bezier. Only cubic Bezier splines are generated, although the code could easily be modified to support higher order curves. 
+
+AUTHOR
+	Nate Fisher, Doubleshot Technologies	
+	nate.scott.fisher@gmail.com
+
+INSTALLATION
+
+	1) Ensure OpenCV is installed
+	2) Configure CMakeLists.txt with the correct directories to the OpenCV libraries
+	3) Build the demo app:
+	 $ cmake [source directory]
+	 $ make
+
+USAGE
+	./main sample_input.txt
