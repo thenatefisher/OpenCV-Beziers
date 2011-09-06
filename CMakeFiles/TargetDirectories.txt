@@ -1,2 +1,0 @@
-/home/fallingmeat/projects/bezier/class/CMakeFiles/bezier.dir
-/home/fallingmeat/projects/bezier/class/CMakeFiles/btest.dir

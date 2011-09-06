@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/btest.dir/btest.cpp.o  -o btest -rdynamic -L/usr/local/lib libbezier.a -lopencv_core -lopencv_imgproc -lopencv_features2d -lopencv_gpu -lopencv_calib3d -lopencv_objdetect -lopencv_video -lopencv_highgui -lopencv_ml -lopencv_legacy -lopencv_contrib -lopencv_flann -Wl,-rpath,/usr/local/lib 
