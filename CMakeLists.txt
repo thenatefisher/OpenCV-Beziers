@@ -10,7 +10,7 @@ include_directories (/usr/local/lib)
 FIND_PACKAGE( OpenCV REQUIRED )
 
 ADD_LIBRARY( bezier bezier.cpp ) 
-ADD_EXECUTABLE( btest btest.cpp )
+ADD_EXECUTABLE( main main.cpp )
 
-TARGET_LINK_LIBRARIES( btest bezier )
-TARGET_LINK_LIBRARIES( btest ${OpenCV_LIBS} )
+TARGET_LINK_LIBRARIES( main bezier )
+TARGET_LINK_LIBRARIES( main ${OpenCV_LIBS} )
