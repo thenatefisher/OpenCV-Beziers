@@ -1,3 +1,11 @@
+/*
+ * bezier.cpp
+ *
+ * Bezier spline library for OpenCV (C++ only)
+ * Author: Nate Fisher, nate.scott.fisher@gmail.com
+ *
+ */
+
 #include <math.h>
 #include <iostream>
 #include <stdio.h>
@@ -7,18 +15,38 @@
 using namespace std;
 #include "bezier.h"
 
+/* 	Bezier() 
+*
+* 	Constructor for Bezier object
+*/
 Bezier::Bezier(){}
 
+/* 	setControlPoints() 
+*
+* 	@input CvMat
+* 
+*	Loads the control points for a cubic Bezier
+*/
 void Bezier::setControlPoints(CvMat* input)
 {
 	this->controlPoints = input;
 }
 
+/* 	getLength() 
+*
+*	Returns the number of control points in the spline as an integer
+*/
 int Bezier::getLength()
 {
 	return this->length;
 }
 
+/* 	getControlPoint() 
+*
+*	@input int
+*
+*	Returns a Point object with coordinates for a particular station on the spline
+*/
 Point Bezier::getControlPoint(int p)
 {
 
