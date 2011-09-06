@@ -45,7 +45,7 @@ int Bezier::getLength()
 *
 *	@input int
 *
-*	Returns a Point object with coordinates for a particular station on the spline
+*	Returns a Point object with coordinates for a particular control point given by p
 */
 Point Bezier::getControlPoint(int p)
 {
@@ -61,6 +61,10 @@ Point Bezier::getControlPoint(int p)
 		
 }
 
+/* 	dumpPoints() 
+*
+*	Outputs all control points in spline to stdout
+*/
 void Bezier::dumpPoints()
 {
 
@@ -74,6 +78,13 @@ void Bezier::dumpPoints()
 	
 }
 
+/* 	loadFile() 
+*
+*	@input char*
+*
+*	Loads a text file with coordinates as float values, separated by commas
+*	Each point should be on a new line
+*/
 void Bezier::loadFile(char* filename[])
 {
 
@@ -107,6 +118,12 @@ void Bezier::loadFile(char* filename[])
 	
 }
 
+/* 	getPoint() 
+*
+*	@input int
+*
+*	Returns a Point object with coordinates for a particular station on the spline given by t
+*/
 Point Bezier::getPoint(int t)
 {
 	Point output;
