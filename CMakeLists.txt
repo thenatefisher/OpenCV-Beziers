@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 
 PROJECT( output )
 
-# Make sure the compiler can find include files from our Hello library. 
+# Make sure the compiler can find include files from our library. 
 include_directories (/usr/local/include/opencv) 
 include_directories (/usr/local/include) 
 include_directories (/usr/local/lib) 
